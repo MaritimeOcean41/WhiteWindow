@@ -1,0 +1,64 @@
+@import url('https://maritimeocean41.github.io/fonts/main.css');
+*
+{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.change
+{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 250px;
+    height: 100px;
+    .button
+    {
+        position: relative;
+        top: calc(100% - 45px);
+        width: 250px;
+        height: 45px;
+        cursor: pointer;
+        i
+        {
+            position: relative;
+            display: none;
+            width: 100%;
+            height: 100%;
+            color: #aaa;
+            line-height: 45px;
+            text-align: center;
+        }
+    }
+    .button:hover
+    {
+        i
+        {
+            display: block;
+        }
+    }
+    .colors
+    {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        position: relative;
+        display: none;
+        bottom: 50%;
+        width: 250px;
+        height: 45px;
+        #color
+        {
+            display: block;
+            width: 45px;
+            height: 45px;
+            border: 1px #ccc solid;
+        }
+    }
+}
